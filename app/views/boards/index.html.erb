@@ -35,9 +35,14 @@
 <ul>
   <% @list_of_boards.each do |a_board| %>
     <li>
-      <a href="/boards/<%= a_board.id %>">
-        <%= a_board.name %>
-      </a>
+      <div>
+        <a href="/boards/<%= a_board.id %>">
+          <%= a_board.name %>
+        </a>
+      </div>
+      <div>
+        Owner: placeholder
+      </div>
     </li>
   <% end %>
 </ul>
